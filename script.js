@@ -41,7 +41,7 @@ let pic6 = document.getElementById('gallow6');
 //-------------------------------------------------------------Main Game--------------------------------------------------------//
 document.addEventListener('keypress', (event) => {
     
-    
+        // Robin mar7,2021 Added Code and logging
             let keyword = String.fromCharCode(event.keyCode);
             console.log("the keyword is: " + keyword);
         //if Users guess is right
@@ -57,6 +57,7 @@ document.addEventListener('keypress', (event) => {
                                   
                                 }
             //replace underscore with right or wrong letter
+            // Robin mar7,2021 added logging
                                                     underScore[chosenWord.indexOf(keyword)] = keyword;
                                                     domUnderScore[0].innerHTML = underScore.join(' ');
                                                     domRightGuess[0].innerHTML = rightWord;
